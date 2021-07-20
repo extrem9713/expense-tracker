@@ -11,6 +11,10 @@ app.set('view engine', 'hbs')
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
 
+app.get('/',(req, res) => {
+  res.render('index')
+})
+
 app.listen(PORT, () => {
   console.log(`this app is running on http://localhost:${PORT}`)
 })
