@@ -3,3 +3,5 @@ function toDate(date) {
   .toISOString()
   .split("T")[0]
 }
+
+module.exports = toDate

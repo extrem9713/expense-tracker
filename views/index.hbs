@@ -28,8 +28,13 @@
             <i class="fas {{this.category.icon}} category-icon"></i>
           </a>
         </div>
-        <div class="col">
+        <div class="col col-auto">
           <div>{{this.name}}</div>
+          <div>{{toDate this.date}}</div>
+        </div>
+        <div class="col col-auto">{{this.amount}}</div>
+        <div class="col col-auto">
+          <a href="/records/{{this._id}}/edit" class="btn btn-primary">修改</a>
         </div>
       </div>
       {{/each}}
