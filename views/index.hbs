@@ -59,8 +59,8 @@
               <p>您確定要刪除{{this.name}}嗎?</p>
             </div>
             <div class="modal-footer">
-              <form action="/records/{{this.id}}?_method=DELETE" method="POST">
-                <button type="button" class="btn btn-danger">確定</button>
+              <form action="/records/{{this._id}}?_method=DELETE" method="POST">
+                <button type="submit" class="btn btn-danger">確定</button>
               </form>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
             </div>
@@ -69,7 +69,7 @@
       </div>
 
       {{/each}}
-      <div class="row d-flex justify-content-center mt-3">
+      <div class="row d-flex justify-content-center mt-3 mb-3">
         <a href="/records/new" class="btn btn-warning" style="font-size: 1.5vw;">新增支出</a>
       </div>
     </div>
