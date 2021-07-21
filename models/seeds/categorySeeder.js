@@ -15,7 +15,7 @@ const categorySeedData = [
 db.once('open', () => {
   Category.create(categorySeedData)
   .then(() => {
-    console.log('Category seeder one.')
+    console.log('Category seeder done.')
     return db.close()
   })
 })
