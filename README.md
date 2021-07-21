@@ -12,19 +12,15 @@
 </ul>
 <h3>下載方法</h3>
 <ol>
-  <li>點擊code複製本專案網址https://github.com/extrem9713/restaurantv3.git</li>
-  <li>使用terminal複製本專案: git clone https://github.com/extrem9713/restaurantv3.git</li>
-  <li>使用terminal進入存放資料的資料夾: cd restaurantv3</li>
+  <li>點擊code複製本專案網址https://github.com/extrem9713/expense-tracker.git</li>
+  <li>使用terminal複製本專案: git clone https://github.com/extrem9713/expense-tracker.git</li>
+  <li>使用terminal進入存放資料的資料夾: cd expense-tracker</li>
   <li>使用terminal安裝npm: npm install</li>
   <li>使用terminal加入種子資料: npm run seed</li>
   <li>使用terminal安裝nodemon: npm install nodemon</li>
   <li>使用terminal: npm run dev</li>
   <li>開啟網頁 http://localhost:3000</li>
 </ol>
-
-<h3>首頁</h3>
-<img src="/public/images/restaurantdemo.png">
-<br>
 <h3>使用工具</h3>
 <ul>
   <li>Visual Studio Code</li>
