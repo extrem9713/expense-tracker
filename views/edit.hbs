@@ -1,0 +1,28 @@
+<div class="container-fluid d-flex justify-content-center">
+  <form action="/records/{{record._id}}?_method=PUT" method="POST">
+    <div class="mt-3 form-group">
+      <label for="category">請修改類別</label>
+      <select name="category" class="form-control" required>
+        {{#each categories}}
+        <option value="{{this._id}}">{{this.title}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="mt-3 form-group">
+      <label for="name">請輸入修改名稱</label>
+      <input type="text" class="form-control" name="name" placeholder="花費名稱" value="{{record.name}}" required>
+    </div>
+    <div class="mt-3 form-group">
+      <label for="amount">請輸入修改花費金額</label>
+      <input type="number" class="form-control" min="1" step="1" name="amount" value="{{record.amount}}" required>
+    </div>
+    <div class="mt-3 form-group">
+      <label for="date">請輸入修改日期</label>
+      <input type="date" class="form-control" name="date" value="{{toDate record.date}}" required>
+    </div>
+
+    <div class="mt-3 form-group">
+      <button type="submit" class="btn btn-warning">儲存</button>
+    </div>
+  </form>
+</div>
