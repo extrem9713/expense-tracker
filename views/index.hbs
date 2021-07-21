@@ -37,13 +37,14 @@
           {{this.amount}}
         </div>
         <div class="col-md-3">
-          <a href="/records/{this._id}/edit" class="btn btn-primary ">edit</a>
+          <a href="/records/{this._id}/edit" class="btn btn-primary ">修改</a>
           <button type="button" class="btn btn-danger" data-bs-toggle="modal"
             data-bs-target="#exampleModal{{this._id}}">
-            delete
+            刪除
           </button>
         </div>
       </div>
+
 
       <!-- Modal -->
       <div class="modal fade" id="exampleModal{{this._id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -68,4 +69,7 @@
       </div>
 
       {{/each}}
+      <div class="row d-flex justify-content-center mt-3">
+        <a href="/records/new" class="btn btn-warning" style="font-size: 1.5vw;">新增支出</a>
+      </div>
     </div>
